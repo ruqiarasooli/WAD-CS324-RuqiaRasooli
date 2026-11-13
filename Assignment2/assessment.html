@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Assessment</title>
+    
+    <link rel="stylesheet" href="nav-style.css">
+    <link rel="stylesheet" href="assessment.css">
+</head>
+<body>
+
+    <!-- NAVIGATION BAR -->
+    <nav class="global-nav">
+        <a href="index.html" class="logo"><img src="images/final-img-logo.png" alt="logo" class="logo-img"></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assessment.html" class="active">Assessment</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="comparecareer.html">Compare Careers</a></li>
+            <li><a href="explorecareer.html">Explore Careers</a></li>
+
+        </ul>
+        <div class="profile-icon" title="Profile"><img src="images/profile-icon.jpg.jpeg" alt="profile-icon" class="profile"></div>
+    </nav>
+
+    <!-- MAIN ASSESSMENT CONTENT -->
+    <main class="assessment-main">
+        <section class="assessment-header">
+            <h1>CAREER ASSESSMENT</h1>
+            <p>Answer a few questions to explore suitable careers and build your personalized roadmap.</p>
+        </section>
+
+        <form class="assess-form" action="anything" method="POST">
+
+            <!-- SECTION 1: EDUCATION & GOALS -->
+            
+            <div class="question-card">
+                <fieldset>
+                    <legend>1. What is your current educational level?</legend>
+                    <label class="hover-label"><input type="radio" name="education" value="middle-school" required> Middle school (Class 6–8)</label>
+                    <label class="hover-label"><input type="radio" name="education" value="matric"> Matric (Class 9–10)</label>
+                    <label class="hover-label"><input type="radio" name="education" value="intermediate"> Intermediate (Class 11–12)</label>
+                    <label class="hover-label"><input type="radio" name="education" value="alevels"> A Levels</label>
+                    <label class="hover-label"><input type="radio" name="education" value="diploma"> Diploma or technical qualification</label>
+                    <label class="hover-label"><input type="radio" name="education" value="bachelors"> Currently pursuing a bachelor's degree</label>
+                    <label class="hover-label"><input type="radio" name="education" value="graduate"> Graduate or postgraduate</label>
+                    
+                    <label class="hover-label other-label">
+                        <input type="radio" name="education" value="other" class="other-trigger">
+                        <span class="other-text">Other</span>
+                        <div class="other-input-box">
+                            <div class="small-label">Please Specify:</div>
+                            <input type="text" name="education_other" class="text-input" placeholder="Type here...">
+                        </div>
+                    </label>
+                </fieldset>
+            </div>
+
+            <div class="question-card">
+                <fieldset>
+                    <legend>2. Where do you plan to study?</legend>
+                    <label class="hover-label"><input type="radio" name="location" value="pakistan" required> Pakistan</label>
+                    <label class="hover-label"><input type="radio" name="location" value="abroad"> Abroad</label>
+                    <label class="hover-label"><input type="radio" name="location" value="both"> Open to both</label>
+                </fieldset>
+            </div>
+
+            <div class="question-card">
+                <fieldset>
+                    <legend>3. What decision are you trying to make?</legend>
+                    <label class="hover-label"><input type="radio" name="decision" value="subjects" required> Choosing my school subjects</label>
+                    <label class="hover-label"><input type="radio" name="decision" value="qualification"> Choosing my next qualification</label>
+                    <label class="hover-label"><input type="radio" name="decision" value="undergrad"> Choosing an undergraduate degree</label>
+                    <label class="hover-label"><input type="radio" name="decision" value="master"> Choosing a specialization or master's degree</label>
+                    <label class="hover-label"><input type="radio" name="decision" value="career"> Exploring a career or career change</label>
+                </fieldset>
+            </div>
+
+            <!-- SECTION 2: INTERESTS & PASSIONS -->
+
+            <div class="question-card">
+                <fieldset>
+                    <legend>4. Which activities do you enjoy the most? (Select up to 4)</legend>
+                    <label class="hover-label"><input type="checkbox" name="activities" value="puzzles"> Solving puzzles and logical problems</label>
+                    <label class="hover-label"><input type="checkbox" name="activities" value="coding"> Using computers, coding, or exploring technology</label>
+                    <label class="hover-label"><input type="checkbox" name="activities" value="biology"> Understanding human biology and health</label>
+                    <label class="hover-label"><input type="checkbox" name="activities" value="helping"> Helping people solve personal or social problems</label>
+                    <label class="hover-label"><input type="checkbox" name="activities" value="teaching"> Explaining concepts and teaching others</label>
+                    <label class="hover-label"><input type="checkbox" name="activities" value="designing"> Drawing, designing, or creating visual content</label>
+                    <label class="hover-label"><input type="checkbox" name="activities" value="writing"> Writing stories, articles, or creating content</label>
+                    <label class="hover-label"><input type="checkbox" name="activities" value="managing"> Managing money, business, or budgets</label>
+                    <label class="hover-label"><input type="checkbox" name="activities" value="leading"> Leading teams and organizing events</label>
+                    <label class="hover-label"><input type="checkbox" name="activities" value="building"> Building, repairing, or experimenting with physical things</label>
+                    <label class="hover-label"><input type="checkbox" name="activities" value="science"> Conducting scientific experiments and research</label>
+                    <label class="hover-label"><input type="checkbox" name="activities" value="nature"> Working with nature, animals, or the environment</label>
+                    <label class="hover-label"><input type="checkbox" name="activities" value="selling"> Persuading people, negotiating, or selling</label>
+                    <label class="hover-label"><input type="checkbox" name="activities" value="planning"> Planning, organizing, and maintaining records</label>
+                </fieldset>
+            </div>
+
+            <div class="question-card">
+                <fieldset>
+                    <legend>5. Which school subjects do you enjoy or find interesting? (Select all that apply)</legend>
+                    <label class="hover-label"><input type="checkbox" name="subjects" value="math"> Mathematics</label>
+                    <label class="hover-label"><input type="checkbox" name="subjects" value="physics"> Physics</label>
+                    <label class="hover-label"><input type="checkbox" name="subjects" value="chemistry"> Chemistry</label>
+                    <label class="hover-label"><input type="checkbox" name="subjects" value="biology"> Biology</label>
+                    <label class="hover-label"><input type="checkbox" name="subjects" value="cs"> Computer Science / Information Technology</label>
+                    <label class="hover-label"><input type="checkbox" name="subjects" value="english"> English / Languages</label>
+                    <label class="hover-label"><input type="checkbox" name="subjects" value="business"> Business Studies / Commerce</label>
+                    <label class="hover-label"><input type="checkbox" name="subjects" value="economics"> Economics / Accounting</label>
+                    <label class="hover-label"><input type="checkbox" name="subjects" value="history"> History / Pak Studies / Social Studies</label>
+                    <label class="hover-label"><input type="checkbox" name="subjects" value="art"> Art / Design / Media</label>
+                    <label class="hover-label"><input type="checkbox" name="subjects" value="psychology"> Psychology</label>
+                    <label class="hover-label"><input type="checkbox" name="subjects" value="geography"> Geography / Environmental Studies</label>
+                    <label class="hover-label"><input type="checkbox" name="subjects" value="vocational"> Technical or vocational subjects</label>
+                    <label class="hover-label"><input type="checkbox" name="subjects" value="unsure"> I am not sure yet</label>
+                    
+                    <label class="hover-label other-label">
+                        <input type="checkbox" name="subjects" value="other" class="other-trigger">
+                        <span class="other-text">Other</span>
+                        <div class="other-input-box">
+                            <div class="small-label">Please Specify:</div>
+                            <input type="text" name="subjects_other" class="text-input" placeholder="Type here...">
+                        </div>
+                    </label>
+                </fieldset>
+            </div>
+
+            <!-- SECTION 3: SKILLS AND STRENGTHS -->
+
+            <div class="question-card">
+                <fieldset>
+                    <legend>6. What are you naturally good at? (Select all that apply)</legend>
+                    <label class="hover-label"><input type="checkbox" name="skills" value="logical"> Logical thinking and problem-solving</label>
+                    <label class="hover-label"><input type="checkbox" name="skills" value="calculations"> Calculations and numerical reasoning</label>
+                    <label class="hover-label"><input type="checkbox" name="skills" value="communication"> Communication and explaining ideas</label>
+                    <label class="hover-label"><input type="checkbox" name="skills" value="creativity"> Creativity and imagination</label>
+                    <label class="hover-label"><input type="checkbox" name="skills" value="writing"> Writing and language</label>
+                    <label class="hover-label"><input type="checkbox" name="skills" value="research"> Research and finding information</label>
+                    <label class="hover-label"><input type="checkbox" name="skills" value="leadership"> Leadership and decision-making</label>
+                    <label class="hover-label"><input type="checkbox" name="skills" value="empathy"> Empathy and understanding others</label>
+                    <label class="hover-label"><input type="checkbox" name="skills" value="practical"> Practical work and using tools</label>
+                    <label class="hover-label"><input type="checkbox" name="skills" value="detail"> Attention to detail and accuracy</label>
+                    <label class="hover-label"><input type="checkbox" name="skills" value="organizing"> Organizing tasks and managing time</label>
+                    <label class="hover-label"><input type="checkbox" name="skills" value="discovering"> I am still discovering my strengths</label>
+                </fieldset>
+            </div>
+
+            <div class="question-card">
+                <fieldset>
+                    <legend>7. How comfortable are you with mathematics and numerical problem-solving?</legend>
+                    <label class="hover-label"><input type="radio" name="math" value="very"> Very comfortable, I enjoy challenging problems</label>
+                    <label class="hover-label"><input type="radio" name="math" value="somewhat"> Somewhat comfortable, I can manage with practice</label>
+                    <label class="hover-label"><input type="radio" name="math" value="not"> Not very comfortable, I prefer less numerical work</label>
+                    <label class="hover-label"><input type="radio" name="math" value="unsure"> I'm not sure yet</label>
+                </fieldset>
+            </div>
+
+            <!-- SECTION 4: PERSONALITY AND WORK STYLE -->
+
+            <div class="question-card">
+                <fieldset>
+                    <legend>8. Which type of work would you prefer?</legend>
+                    <label class="hover-label"><input type="radio" name="work_type" value="analyzing"> Analyzing information and solving problems</label>
+                    <label class="hover-label"><input type="radio" name="work_type" value="creating"> Creating new ideas, designs, or content</label>
+                    <label class="hover-label"><input type="radio" name="work_type" value="helping"> Helping, teaching, or working directly with people</label>
+                    <label class="hover-label"><input type="radio" name="work_type" value="building"> Building, operating, or repairing things</label>
+                    <label class="hover-label"><input type="radio" name="work_type" value="managing"> Managing projects, money, or organizations</label>
+                    <label class="hover-label"><input type="radio" name="work_type" value="investigating"> Investigating questions and discovering new knowledge</label>
+                    <label class="hover-label"><input type="radio" name="work_type" value="mixture"> A mixture of these / I'm not sure yet</label>
+                </fieldset>
+            </div>
+
+            <div class="question-card">
+                <fieldset>
+                    <legend>9. Which working environment sounds most appealing?</legend>
+                    <label class="hover-label"><input type="radio" name="environment" value="office"> An office, technology company, or professional workplace</label>
+                    <label class="hover-label"><input type="radio" name="environment" value="hospital"> A hospital, clinic, or healthcare setting</label>
+                    <label class="hover-label"><input type="radio" name="environment" value="school"> A school, community center, or social organization</label>
+                    <label class="hover-label"><input type="radio" name="environment" value="lab"> A laboratory or research center</label>
+                    <label class="hover-label"><input type="radio" name="environment" value="studio"> A creative studio, media house, or design environment</label>
+                    <label class="hover-label"><input type="radio" name="environment" value="outdoors"> Outdoor work, fieldwork, or practical sites</label>
+                    <label class="hover-label"><input type="radio" name="environment" value="business"> A business, startup, or my own company</label>
+                    <label class="hover-label"><input type="radio" name="environment" value="flexible"> A flexible or mixed environment</label>
+                </fieldset>
+            </div>
+
+            <div class="question-card">
+                <fieldset>
+                    <legend>10. What matters most to you in a future career? (Select up to 3)</legend>
+                    <label class="hover-label"><input type="checkbox" name="values" value="earning"> High earning potential</label>
+                    <label class="hover-label"><input type="checkbox" name="values" value="security"> Job security and stability</label>
+                    <label class="hover-label"><input type="checkbox" name="values" value="helping"> Helping people and making a difference</label>
+                    <label class="hover-label"><input type="checkbox" name="values" value="independence"> Creativity and independence</label>
+                    <label class="hover-label"><input type="checkbox" name="values" value="growth"> Leadership and career growth</label>
+                    <label class="hover-label"><input type="checkbox" name="values" value="innovation"> Innovation and technology</label>
+                    <label class="hover-label"><input type="checkbox" name="values" value="balance"> Work-life balance</label>
+                    <label class="hover-label"><input type="checkbox" name="values" value="abroad"> Opportunities to work abroad</label>
+                    <label class="hover-label"><input type="checkbox" name="values" value="startup"> Starting my own business</label>
+                    <label class="hover-label"><input type="checkbox" name="values" value="respect"> Respect and professional recognition</label>
+                </fieldset>
+            </div>
+
+            <!-- SECTION 5: EDUCATION CONSTRAINTS -->
+
+            <div class="question-card">
+                <fieldset>
+                    <legend>11. How long are you willing to study after your current qualification?</legend>
+                    <label class="hover-label"><input type="radio" name="study_duration" value="short"> A short course or certificate</label>
+                    <label class="hover-label"><input type="radio" name="study_duration" value="diploma"> A diploma or approximately 1–2 years</label>
+                    <label class="hover-label"><input type="radio" name="study_duration" value="bachelors"> A 3–4 year bachelor's degree</label>
+                    <label class="hover-label"><input type="radio" name="study_duration" value="professional"> A longer professional degree, such as medicine</label>
+                    <label class="hover-label"><input type="radio" name="study_duration" value="postgrad"> A bachelor's degree followed by postgraduate study</label>
+                    <label class="hover-label"><input type="radio" name="study_duration" value="flexible"> I'm flexible / I need guidance</label>
+                </fieldset>
+            </div>
+
+            <div class="question-card">
+                <fieldset>
+                    <legend>12. What is your preferred way of learning?</legend>
+                    <label class="hover-label"><input type="radio" name="learning_style" value="theory"> Reading, theory, and understanding concepts</label>
+                    <label class="hover-label"><input type="radio" name="learning_style" value="practical"> Practical tasks, experiments, and projects</label>
+                    <label class="hover-label"><input type="radio" name="learning_style" value="teamwork"> Discussions and teamwork</label>
+                    <label class="hover-label"><input type="radio" name="learning_style" value="independent"> Independent learning and exploration</label>
+                    <label class="hover-label"><input type="radio" name="learning_style" value="balance"> A balance of theory and practical work</label>
+                    <label class="hover-label"><input type="radio" name="learning_style" value="unsure"> I'm not sure yet</label>
+                </fieldset>
+            </div>
+
+            <div class="question-card">
+                <fieldset>
+                    <legend>13. Which factor should be considered when recommending your education path?</legend>
+                    <label class="hover-label"><input type="radio" name="factor" value="cost"> Affordable tuition and education costs</label>
+                    <label class="hover-label"><input type="radio" name="factor" value="aid"> Scholarships and financial aid</label>
+                    <label class="hover-label"><input type="radio" name="factor" value="jobs"> Strong employment opportunities after graduation</label>
+                    <label class="hover-label"><input type="radio" name="factor" value="remote"> Flexible work or remote-work opportunities</label>
+                    <label class="hover-label"><input type="radio" name="factor" value="interests"> My interests and aptitude come first</label>
+                    <label class="hover-label"><input type="radio" name="factor" value="balance"> A balance of all these factors</label>
+                </fieldset>
+            </div>
+
+            <div class="question-card">
+                <fieldset>
+                    <legend>14. Is there anything else we should know about your interests or goals? (Optional)</legend>
+                    <textarea name="extra_info" class="textarea-input" placeholder="Type your thoughts here..."></textarea>
+                </fieldset>
+            </div>
+
+            <!-- FORM SUBMIT BUTTON -->
+            <div class="form-navigation" style="justify-content: flex-end;">
+                <a href="careerresult.html" class="btn-primary" style="text-decoration: none;">Submit Assessment &rarr;</a>  
+
+            </div>
+
+        </form>
+    </main>
+
+    <!--Footer-->
+    <footer class="foot">
+           <p class="fheading">
+            <img src="images/logo.jpeg" alt="CareerCompass logo">
+             CareerCompass
+           </p>
+           <p>Your path to the right career. </p>
+          
+           <div class="footer-container">
+             <nav>
+              <h4>Quick links</h4>
+              <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="assessment.html">Assesment</a></li>
+                 <li><a href="roadmap.html">Roadmap</a></li>
+                 <li><a href="comparecareer.html">CompareCareer</a></li>
+                 <li><a href="explorecareer.html">ExploreCareer</a></li>
+              </ul>
+             </nav>
+              <div>
+                 <h4>About us</h4> 
+                 <p>Our website help students explore careers, compare careers and discover career roadmaps so that they can make the best decision for their future. </p>
+                 <p>Our aim is to integrate AI as a career advisor that can understand student's interest, skills and preferences based on them it provides personalized career suggestions, and guide them how to achieve it. </p>
+              </div> 
+              <div>
+                 <h4>Contact us</h4> 
+                 <a href="mailto:careercompass@gmail.com">careercompass@gmail.com</a><br>
+                 <a href="tel:+921234567890">+92 xxx xxxxxxx</a>
+              </div>
+           </div>
+           <p class="copyright"><small>&copy; 2026 CareerCompass</small></p>
+     </footer>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compare Career | CareerCompass </title>
+    <link rel="stylesheet" href="comparecareer.css">
+</head>
+<body>
+    <!--header--->
+     <header>
+    <nav class="global-nav">
+        <!--Logo-->
+        <a href="index.html" class="logo"><img src="images/final-img-logo.png" alt="logo" class="logo-img"></a>
+
+        <!--The Navigation Links-->
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="assessment.html">Assessment</a></li>
+            <li><a href="roadmap.html">Roadmap</a></li>
+            <li><a href="comparecareer.html" class="active">Compare Careers</a></li>
+            <li><a href="explorecareer.html">Explore Careers</a></li>
+        </ul>
+     
+        <!-- The profile Icon-->
+         <div class="profile-icon" title="Profile"><img src="images/profile-icon.jpg.jpeg" alt="profile-icon" class="profile"></div>
+    </nav>
+    </header>
+    <main>
+        <section class="intro"> <!--page introduction-->
+            <h1>Compare Career</h1>
+            <p>
+                Not sure which path to follow? Compare career paths side by side tounderstand their responsibilities, required 
+                skills and future opportunities, then decide which ones interest you most. 
+            </p>
+        </section>
+        
+        <section class="comparison">
+            <h2>Career Comparison</h2>
+            <!--Remove this note when careers become dynamic(js and backend ai)-->
+            <p class="note">
+                Note: These careers are fixed examples for comparison.
+            </p>
+
+            <div class="compare-tool">
+            <p class="picker-title" id="picker-title">Choose careers to compare</p>
+
+            <input type="checkbox" id="pick-ai" >
+            <label for="pick-ai">AI Engineer</label>
+
+            <input type="checkbox" id="pick-web" >
+            <label for="pick-web">Web Developer</label>
+
+            <input type="checkbox" id="pick-data" checked>
+            <label for="pick-data">Data Analyst</label>
+
+            <input type="checkbox" id="pick-cyber" checked>
+            <label for="pick-cyber">Cybersecurity Analyst</label>
+
+            <p class="empty-msg">Tick at least two careers to see comparison</p>
+
+            <div class="table-wrapper">
+                <table>
+                    <caption>Comparison of the careers you selected</caption>
+                    <thead>
+                        <tr>
+                            <th>What to compare</th>
+                            <th class="col-data">Data Analyst</th>
+                            <th class="col-cyber">Cybersecurity Analyst</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Main responsibilities</th>
+                            <td class="col-data">Collects and studies data, then explain findings through reports and graphs.</td>
+                            <td class="col-cyber">Protects systems and data from attackers, and find weak points before attackers.</td>
+                        </tr>
+                        <tr>
+                            <th >Important skills</th>
+                            <td class="col-data">Statistics, spreadsheets, SQL, Clear presentation of results.</td>
+                            <td class="col-cyber">Networking, operating systems, careful thinking, curiosity.</td>
+                        </tr>
+                        <tr>
+                            <th>Relevant degree or background</th>
+                            <td class="col-data">BS  Data Science, Computer Science, Statistics, or Business.</td>
+                            <td class="col-cyber">BS cyber security, Computer Science or Information Technology.</td>
+                        </tr>
+                        <tr>
+                            <th>common tools and technologies</th>
+                            <td class="col-data">Excel, SQL, Python, Power BI, Tableau.</td>
+                            <td class="col-cyber">Wireshark, Kali Linux, firewalls, security scanners.</td>
+                        </tr>
+                        <tr>
+                            <th>Possible entry level roles</th>
+                            <td class="col-data">Junior Data Analyst, Reporting Assistant, Data Intern.</td>
+                            <td class="col-cyber">Security Analyst Trainee, IT Support(Security), Security Intern</td>
+                        </tr>
+                        <tr>
+                            <th>Future career growth</th>
+                            <td class="col-data">Senior Analyst, Data Scientist</td>
+                            <td class="col-cyber">Security Engineer,Penetration Tester, Security Manager.</td>
+                        </tr>
+                        <tr>
+                            <th>Suits people who like</th>
+                            <td class="col-data">Finding patterns, organising information, telling stories with numbers.</td>
+                            <td class="col-cyber">Puzzles, investigating problems, staying alert on risks.</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </section>
+
+        <section class="guidance">
+            <h2>Which Career Might Suit You?</h2>
+            <p> Use these questions to think about your own interests and strength.</p>
+            <div class="cards">
+                <article class="card">
+                    <h3>Think of Data Analyst if..</h3>
+                    <ul>
+                        <li>You like working with numbers and tables.</li>
+                        <li>You are organised and careful with details.</li>
+                        <li>You enjoy explaining findings clearly.</li>
+                    </ul>
+                </article>
+                <article class="card">
+                    <h3>Think of Cybersecurity Analyst if..</h3>
+                    <ul>
+                        <li>You are curious about how systems can fail.</li>
+                        <li>You enjoy puzzles and investigating problems.</li>
+                        <li>You stay calm and focused under pressure.</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section class="actions">
+            <a class="btn btn-primary" href="explorecareer.html">Explore More Careers</a>
+        </section>
+        
+        
+    </main>
+
+     <footer class="foot">
+           <p class="fheading">
+            <img src="images/logo.jpeg" alt="CareerCompass logo">
+             CareerCompass
+           </p>
+           <p>Your path to the right career. </p>
+          
+           <div class="footer-container">
+             <nav>
+              <h4>Quick links</h4>
+              <ul>
+                 <li><a href="index.html">Home</a></li>
+                 <li><a href="assessment.html">Assesment</a></li>
+                 <li><a href="roadmap.html">Roadmap</a></li>
+                 <li><a href="comparecareer.html">CompareCareer</a></li>
+                 <li><a href="explorecareer.html">ExploreCareer</a></li>
+              </ul>
+             </nav>
+              <div>
+                 <h4>About us</h4> 
+                 <p>Our website help students explore careers, compare careers and discover career roadmaps so that they can make the best decision for their future. </p>
+                 <p>Our aim is to integrate AI as a career advisor that can understand student's interest, skills and preferences based on them it provides personalized career suggestions, and guide them how to achieve it. </p>
+              </div> 
+              <div>
+                 <h4>Contact us</h4> 
+                 <a href="mailto:careercompass@gmail.com">careercompass@gmail.com</a><br>
+                 <a href="tel:+921234567890">+92 xxx xxxxxxx</a>
+              </div>
+           </div>
+           <p class="copyright"><small>&copy; 2026 CareerCompass</small></p>
+     </footer>
+
+</body>
+</html>

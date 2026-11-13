@@ -1,0 +1,351 @@
+/* --- BASE & VARIABLES --- */
+:root {
+  --midnight-navy: #171D3D;
+  --electric-violet: #635BFF;
+  --soft-lavender: #A78BFA;
+  --cloud-white: #F8FAFC;
+  --pure-white: #FFFFFF;
+  --slate-gray: #64748B;
+  
+  --font-main: 'Inter', sans-serif;
+  --font-heading: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--cloud-white);
+  color: var(--midnight-navy);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- ASSESSMENT PAGE LAYOUT --- */
+.assessment-main {
+  max-width: 800px;
+  margin: 3rem auto; /*it needs width and auto divides itself wrt Screen size*/
+  padding: 0px 1rem; /*zz*/
+
+}
+
+/*HEADINGS*/
+.assessment-header {
+  margin-top: 150px; /*top se distance*/
+  margin-bottom: 5rem; /*below content to content distance*/
+  text-align: center;
+}
+
+.assessment-header h1 {
+  font-family: var(--font-heading);
+  color: var(--midnight-navy);
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.assessment-header p {
+  color: var(--slate-gray);
+  font-size: 1.1rem;
+}
+
+/* --- QUESTION CARDS --- */
+.question-card {
+  background-color: var(--cloud-white); 
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 15px var(--soft-lavender);
+}
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column; 
+  gap: 0.5rem; 
+}
+
+legend {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  color: var(--midnight-navy);
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.4;
+}
+
+/* --- HOVER ROW & NATIVE INPUTS --- */
+.hover-label {
+  display: flex;
+  align-items:center; /*controls up and down, always use with display*/
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  color: var(--midnight-navy);
+  font-family: var(--font-main);
+  font-size: 1rem;
+  transition: all 0.2s ease;
+  width: 100%; 
+  box-sizing: border-box;
+}
+
+.hover-label:hover {
+  background-color: var(--soft-lavender); 
+  color: var(--midnight-navy);
+}
+
+.hover-label input[type="radio"],
+.hover-label input[type="checkbox"] {
+  accent-color: var(--electric-violet);
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+/* --- BULLETPROOF "OTHER" OPTION --- */
+.other-label {
+  flex-wrap: wrap; 
+}
+
+.other-text {
+  flex: 1; 
+}
+
+.other-trigger {
+  position: static !important; 
+  opacity: 1 !important; 
+}
+
+.other-input-box {
+  display: none; 
+  width: 100%; 
+  margin-left: 30px; 
+  margin-top: 10px;
+}
+
+.other-trigger:checked ~ .other-input-box {
+  display: block;
+}
+
+.small-label {
+  display: block;
+  font-size: 0.9rem;
+  color: var(--slate-gray);
+  margin-bottom: 0.3rem;
+}
+
+.text-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 0.8rem;
+  border: 2px solid var(--soft-lavender);
+  border-radius: 8px;
+  font-family: var(--font-main);
+  color: var(--midnight-navy);
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.text-input:focus {
+  outline: none;
+  border-color: var(--electric-violet);
+}
+
+/* --- TEXTAREA --- */
+.textarea-input {
+  width: 100%;
+  padding: 1rem;
+  border: 2px solid var(--soft-lavender);
+  border-radius: 8px;
+  font-family: var(--font-main);
+  color: var(--midnight-navy);
+  /*transition: border-color 0.3s ease;*/
+  resize: vertical;
+  min-height: 120px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.textarea-input:focus {
+  outline: none;
+  border-color: var(--electric-violet);
+}
+
+/* --- NAVIGATION BUTTONS --- */
+.form-navigation {
+  display: flex;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
+
+.btn-primary {
+  display: inline-block;
+  background-color: var(--electric-violet);
+  color: var(--pure-white);
+  padding: 1rem 3rem;
+  border-radius: 50px;
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(99, 91, 255, 0.3);
+}
+
+.btn-primary:hover {
+  background-color: var(--midnight-navy);
+  /*transform: translateY(-2px);*/
+  box-shadow: 0 6px 20px rgba(23, 29, 61, 0.2);
+}
+
+
+/*FOOTER*/
+footer div {
+    font: normal 0.95rem sans-serif;
+}
+footer.foot {
+ color:white ;
+ background-color:#635BFF;
+ margin-top: auto;
+ padding:1rem 1.5rem;
+ line-height: 1.2;
+ border-top:4px solid #7fe0d4;
+ box-sizing: border-box;
+}
+.fheading {
+  display:flex;
+  gap: 0.75rem;
+  align-items: center;
+  font: bold 1.5rem Georgia, "Times New Roman",serif;
+  max-width: 70rem;
+  margin:0 auto 0.5rem auto;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #7fe0d4;
+}
+footer img{
+    height:3rem;
+    width: auto;
+    border-radius: 50%;
+}
+.footer-container {
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    gap:2rem;
+    margin: 0 auto;
+    max-width:70rem;
+}
+.footer-container > *{
+    flex:1 1 12rem;
+}
+.footer-container >div:nth-child(2){
+    flex:3 1 16rem;
+}
+
+footer h4{
+    margin:0 0 0.5rem 0;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+footer ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;
+    
+}
+footer li{
+    margin-bottom:0.2rem;
+
+}
+footer a:visited,
+footer a:link{
+    color:white
+}
+ footer a:hover{
+    color:#7fe0d4;
+ }
+ .copyright {
+    text-align: center;
+    padding-top:0.5rem;
+    border-top: 1px solid #7fe0d4;
+    max-width:70rem;
+    margin:0.75rem auto 0 auto;
+ }
+ @media (max-width:600px){
+    .footer-container{
+        flex-direction:column;
+        text-align: center;
+    }
+    .footer-container > *{
+        flex: 0 1 auto;
+    }
+ }
+
+ /* ===== RESPONSIVE: ASSESSMENT PAGE ===== */
+
+/* tablets */
+@media (max-width: 900px) {
+    .assessment-header {
+        margin-top: 2rem;      /* nav-style.css already pushes content below the fixed nav */
+        margin-bottom: 2.5rem;
+    }
+
+    .question-card {
+        padding: 1.75rem;
+        margin-bottom: 2rem;
+    }
+}
+
+/* phones */
+@media (max-width: 600px) {
+    .assessment-main {
+        margin: 1.5rem auto;
+        padding: 0 4%;
+    }
+
+    .assessment-header h1 {
+        font-size: 1.6rem;
+    }
+
+    .assessment-header p {
+        font-size: 1rem;
+    }
+
+    .question-card {
+        padding: 1.25rem 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    legend {
+        font-size: 1rem;
+    }
+
+    .hover-label {
+        padding: 0.7rem 0.5rem;
+        font-size: 0.95rem;
+    }
+
+    .other-input-box {
+        margin-left: 0;
+    }
+
+    .text-input {
+        max-width: 100%;
+    }
+
+    .form-navigation {
+        justify-content: stretch !important;  /* overrides the inline style in your HTML */
+    }
+
+    .btn-primary {
+        width: 100%;
+        padding: 1rem;
+    }
+}

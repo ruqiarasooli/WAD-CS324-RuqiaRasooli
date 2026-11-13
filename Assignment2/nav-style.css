@@ -1,0 +1,139 @@
+/* ===== nav.css — shared base + navigation bar ===== */
+
+:root {
+    --midnight-navy: #171D3D;
+    --electric-violet: #635BFF;
+    --soft-lavender: #A78BFA;
+    --cloud-white: #F8FAFC;
+    --pure-white: #FFFFFF;
+    --slate-gray: #64748B;
+
+    --font-main: 'Inter', sans-serif;
+    --font-heading: 'Montserrat', sans-serif;
+
+    --nav-height: 128px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--cloud-white);
+    color: var(--midnight-navy);
+    padding-top: var(--nav-height);
+}
+
+.global-nav {
+    display: flex;
+    align-items: center;
+    padding: 0 5%;
+    height: var(--nav-height);
+    background-color: var(--electric-violet);
+    font-family: var(--font-main);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo-img {
+    height: 100px;
+    max-height: 100%;
+    width: auto;
+    border-radius: 70%;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.nav-links a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--midnight-navy);
+    font-family: var(--font-main);
+    font-weight: 500;
+    padding: 8px 5px;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.nav-links a:hover,
+.nav-links a:active,
+.nav-links a.active {
+    color: azure;
+    border-color: azure;
+    transform: scale(1.1);
+}
+
+
+
+.profile {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*MEDIA*/
+/* Tablet and small laptop */
+@media (max-width: 900px) {
+    :root {
+        --nav-height: 90px;
+    }
+    .logo-img {
+        height: 90px;
+    }
+    .nav-links {
+        gap: 0.75rem;
+        margin-right: 1rem;
+    }
+    .nav-links a {
+        font-size: 0.9rem;
+        padding: 6px 3px;
+    }
+    .profile {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+/* Phone */
+@media (max-width: 600px) {
+    body {
+        padding-top: 0;
+    }
+    .global-nav {
+        position: static;
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 8px 5%;
+    }
+    .logo-img {
+        height: 60px;
+    }
+    .nav-links {
+        order: 3;
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem 1rem;
+        margin: 8px 0 0 0;
+    }
+}
